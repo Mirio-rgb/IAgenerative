@@ -1,0 +1,78 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #030405;
+    color: white;
+    padding: 15px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {
+    color: rgb(231, 219, 219);
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+
+
+nav a:hover {
+    color: #a42df3;
+}
+
+
+nav {
+    cursor: pointer; 
+}
+
+
+
+section {
+    padding: 100px;
+    max-width: 800px;
+    margin: auto;
+    background: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+footer {
+    text-align: center;
+    padding: 50px;
+    background-color: #02060a;
+    color: white;
+    position: relative;
+    width: 100%;
+    bottom: 0;
+}
+
+   /* Animation de clignotement */
+   @keyframes clignotement {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.clignoter {
+    animation: clignotement 1s infinite;
+}
